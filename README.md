@@ -1,4 +1,5 @@
-# Docker Fundementals & Operations Workshop
+# Docker Fundementals & Operations Two Day Workshop
+#### clemenko@docker.com | @clemenko
 
 ## Agenda :
 ### What You'll Learn
@@ -16,14 +17,14 @@
 - Familiarity with a text editor (Visual Studio, emacs, vi, etc.)
 - Bring your own laptop
 
-### Day 1
+## Day 1
 - Intro to Containers
 - Docker 101 
     - Stage 1 - https://training.play-with-docker.com/ops-stage1/
     - Stage 2 - https://training.play-with-docker.com/ops-stage2/
     - Stage 3 - https://training.play-with-docker.com/ops-stage3/
 
-### Day 2
+## Day 2
 - Docker Enterprise Edition Hands on Lab - https://github.com/dockersamples/ee-exercises
 - Understand Secure Supply Chain - https://github.com/clemenko/dc18_supply_chain
 - Deploying a multi-OS application - https://github.com/dockersamples/ee-workshop
