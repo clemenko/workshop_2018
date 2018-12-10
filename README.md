@@ -20,6 +20,9 @@
 
 ## Day 1
 - Intro to Containers - https://github.com/clemenko/workshop_2018/raw/master/Docker%20101.key
+    - Dockerfiles - https://github.com/clemenko/dockerfiles
+    - Compose Files - https://github.com/clemenko/compose_files
+
 - Docker 101 
     - Stage 1 - https://training.play-with-docker.com/ops-stage1/
     - Stage 2 - https://training.play-with-docker.com/ops-stage2/
@@ -27,6 +30,8 @@
 
 ## Day 2
 - Intro to Docker Enterprise Edition - https://github.com/clemenko/workshop_2018/raw/master/Docker%20EE%20Technical%20Overview.key
+- Docker EE Walkthough
+
 - Docker Enterprise Edition Hands on Lab - https://github.com/dockersamples/ee-exercises
 - Understand Secure Supply Chain - https://github.com/clemenko/dc18_supply_chain
 - Deploying a multi-OS application - https://github.com/dockersamples/ee-workshop
