@@ -1,5 +1,6 @@
 # Docker Fundementals & Operations Two Day Workshop
-#### clemenko@docker.com | @clemenko
+
+#### clemenko@docker.com | (@clemenko)[https://twitter.com/clemenko]
 
 ## Agenda :
 ### What You'll Learn
