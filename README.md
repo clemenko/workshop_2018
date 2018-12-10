@@ -22,6 +22,7 @@
 #### Day 1
 - Intro to Containers
 - Docker 101
+    - https://training.play-with-docker.com/beginner-linux/
 
 #### Day 2
 - Docker Enterprise Edition Hands on Lab
@@ -30,3 +31,5 @@
 
 ## Day 1
 ### Docker 101
+
+https://training.play-with-docker.com/beginner-linux/
