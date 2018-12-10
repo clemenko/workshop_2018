@@ -18,6 +18,11 @@
 - Familiarity with a text editor (Visual Studio, emacs, vi, etc.)
 - Bring your own laptop
 
+##
+How this workshop works. 
+- ASK QUESTIONS!
+- THERE MAY BE PRIZES!
+
 ## Day 1
 - Intro to Containers - https://github.com/clemenko/workshop_2018/raw/master/Docker%20101.key
     - Dockerfiles - https://github.com/clemenko/dockerfiles
