@@ -1,6 +1,6 @@
 # Docker Fundementals & Operations Workshop
 
-## Agenda
+## Agenda :
 ### What You'll Learn
 - Definition of a container.
 - Review of applications best suited for containerization.
@@ -27,3 +27,6 @@
 - Docker Enterprise Edition Hands on Lab
 - Understand Secure Supply Chain
 - Deploying a multi-OS application
+
+## Day 1
+### Docker 101
