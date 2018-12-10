@@ -20,7 +20,7 @@
 
 ## How this workshop works. 
 - ASK QUESTIONS!
-- THERE MAY BE PRIZES!
+- THERE MAY BE PRIZES!  
 
 ## Day 1
 - Intro to Containers - https://github.com/clemenko/workshop_2018/raw/master/Docker%20101.key
