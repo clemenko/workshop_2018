@@ -18,8 +18,7 @@
 - Familiarity with a text editor (Visual Studio, emacs, vi, etc.)
 - Bring your own laptop
 
-##
-How this workshop works. 
+## How this workshop works. 
 - ASK QUESTIONS!
 - THERE MAY BE PRIZES!
 
