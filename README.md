@@ -24,6 +24,7 @@
 
 ## Day 1
 - Intro to Containers - https://github.com/clemenko/workshop_2018/raw/master/Docker%20101.key
+    - Dive - https://github.com/wagoodman/dive
     - Dockerfiles - https://github.com/clemenko/dockerfiles
     - Compose Files - https://github.com/clemenko/compose_files
 
