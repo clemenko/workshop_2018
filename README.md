@@ -33,13 +33,15 @@
     - Stage 2 - https://training.play-with-docker.com/ops-stage2/
     - Stage 3 - https://training.play-with-docker.com/ops-stage3/
 
+- Docker 101 Windows - https://github.com/dockersamples/ee-exercises/blob/master/windows.md
+
 ## Day 2
 - Intro to Docker Enterprise Edition - https://github.com/clemenko/workshop_2018/raw/master/Docker%20EE%20Technical%20Overview.key
-- Docker EE Walkthough
 
-- Docker Enterprise Edition Hands on Lab - https://github.com/dockersamples/ee-exercises
+- Docker EE Walkthough
 - Understand Secure Supply Chain - https://github.com/clemenko/dc18_supply_chain
 - Deploying a multi-OS application - https://github.com/dockersamples/ee-workshop
+    - More labs - https://github.com/dockersamples/ee-exercises
 
 ### Call to Action
 - More training - https://training.play-with-docker.com/alacart/
