@@ -31,7 +31,6 @@
 - Docker 101 
     - Stage 1 - https://training.play-with-docker.com/ops-stage1/
     - Stage 2 - https://training.play-with-docker.com/ops-stage2/
-    - Stage 3 - https://training.play-with-docker.com/ops-stage3/
 
 - Docker 101 Windows - https://github.com/dockersamples/ee-exercises/blob/master/windows.md
 
