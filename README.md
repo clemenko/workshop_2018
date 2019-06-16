@@ -38,7 +38,7 @@
 - Intro to Docker Enterprise Edition - https://github.com/clemenko/workshop_2018/raw/master/Docker%20EE%20Technical%20Overview.key
 
 - Docker EE Walkthough
-- Understand Secure Supply Chain - https://github.com/clemenko/dc18_supply_chain
+- Understand Secure Supply Chain - https://github.com/clemenko/dc19_supply_chain
 - Deploying a multi-OS application - https://github.com/dockersamples/ee-workshop
     - More labs - https://github.com/dockersamples/ee-exercises
 
