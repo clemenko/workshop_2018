@@ -3,7 +3,7 @@
 # edit vars
 ###################################
 set -e
-num=8 #3 or larger please!
+num=7 #3 or larger please!
 prefix=student
 password=Pa22word
 zone=sfo2
@@ -111,7 +111,7 @@ sysctl -p'  > /dev/null 2>&1
 echo "$GREEN" "[ok]" "$NORMAL"
 
 echo -n " updating the os and installing docker ee "
-pdsh -l root -w $host_list 'yum update -y; yum install -y vim yum-utils; yum downgrade -y container-selinux-2.74-1.el7; echo "https://storebits.docker.com/ee/m/sub-cd49e6a5-5e6f-4912-8f29-19397129084e/centos" > /etc/yum/vars/dockerurl; echo "7" > /etc/yum/vars/dockerosversion; yum-config-manager --add-repo $(cat /etc/yum/vars/dockerurl)/docker-ee.repo; yum makecache fast; yum-config-manager --enable '"$centos_engine_repo"'; yum -y install docker-ee-18.09.0-3.el7 docker-ee-cli-18.09.0-3.el7; systemctl start docker; systemctl enable docker'  > /dev/null 2>&1
+pdsh -l root -w $host_list 'yum update -y; yum install -y vim yum-utils; yum downgrade -y container-selinux-2.74-1.el7; echo "https://storebits.docker.com/ee/m/sub-cd49e6a5-5e6f-4912-8f29-19397129084e/centos" > /etc/yum/vars/dockerurl; echo "7" > /etc/yum/vars/dockerosversion; yum-config-manager --add-repo $(cat /etc/yum/vars/dockerurl)/docker-ee.repo; yum makecache fast; yum-config-manager --enable '"$centos_engine_repo"'; yum -y install docker-ee; systemctl start docker; systemctl enable docker'  > /dev/null 2>&1
 echo "$GREEN" "[ok]" "$NORMAL"
 
 echo -n " adding daemon configs "
@@ -124,4 +124,3 @@ doctl compute droplet list --no-header |grep $prefix
 
 echo ""
 echo " to kill : $GREEN for i in \$(doctl compute droplet list --no-header|grep $prefix|awk '{print \$1}'); do doctl compute droplet delete --force \$i; done ; for i in \$(doctl compute domain records list dockr.life --no-header|grep $prefix|awk '{print \$1}'); do doctl compute domain records delete dockr.life \$i --force; done; rm -rf hosts.txt $NORMAL"
-

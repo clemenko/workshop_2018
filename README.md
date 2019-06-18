@@ -45,3 +45,6 @@
 ### Call to Action
 - More training - https://training.play-with-docker.com/alacart/
 - Reference Architectures - https://success.docker.com/architectures
+
+### Gist
+- [bash prompt](https://gist.github.com/clemenko/6be08eb2bf2c7690d1a8dc9abad68c24)
