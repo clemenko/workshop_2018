@@ -3,7 +3,7 @@
 # edit vars
 ###################################
 set -e
-num=1 #3 or larger please!
+num=1 # of students
 prefix=student
 password=Pa22word
 zone=sfo2
