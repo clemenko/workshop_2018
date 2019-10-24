@@ -3,7 +3,7 @@
 # edit vars
 ###################################
 set -e
-num=1 # of students
+num=5 # of students
 prefix=student
 password=Pa22word
 zone=sfo2
@@ -27,7 +27,7 @@ for i in $(seq 1 $num); do
  build_list="$prefix-$i-b $build_list"
  build_list="$prefix-$i-c $build_list"
 done
-echo -n " building $num vms : "
+echo -n " building vms for $num student(s): "
 doctl compute droplet create $build_list --region $zone --image centos-7-x64 --size $size --ssh-keys $key --wait > /dev/null 2>&1
 doctl compute droplet list|grep -v ID|grep $prefix|awk '{print $3" "$2}'> hosts.txt
 echo "$GREEN" "[ok]" "$NORMAL"
@@ -55,6 +55,16 @@ pdsh -l root -w $host_list 'systemctl enable docker;  echo Pa22word | passwd roo
 echo "$GREEN" "[ok]" "$NORMAL"
 
 sleep 1
+
+
+echo ""
+echo "===== Cluster ====="
+doctl compute droplet list --no-header |grep $prefix
+
+echo ""
+echo " to kill : $GREEN for i in \$(doctl compute droplet list --no-header|grep $prefix|awk '{print \$1}'); do doctl compute droplet delete --force \$i; done ; for i in \$(doctl compute domain records list dockr.life --no-header|grep $prefix|awk '{print \$1}'); do doctl compute domain records delete dockr.life \$i --force; done; rm -rf hosts.txt $NORMAL"
+
+exit
 
 echo -n " updating kernel settings "
 pdsh -l root -w $host_list 'cat << EOF >> /etc/sysctl.conf
@@ -118,9 +128,3 @@ echo -n " adding daemon configs "
 pdsh -l root -w $host_list 'echo -e "{\n \"selinux-enabled\": true, \n \"log-driver\": \"json-file\", \n \"log-opts\": {\"max-size\": \"10m\", \"max-file\": \"3\"} \n }" > /etc/docker/daemon.json; systemctl restart docker'
 echo "$GREEN" "[ok]" "$NORMAL"
 
-echo ""
-echo "===== Cluster ====="
-doctl compute droplet list --no-header |grep $prefix
-
-echo ""
-echo " to kill : $GREEN for i in \$(doctl compute droplet list --no-header|grep $prefix|awk '{print \$1}'); do doctl compute droplet delete --force \$i; done ; for i in \$(doctl compute domain records list dockr.life --no-header|grep $prefix|awk '{print \$1}'); do doctl compute domain records delete dockr.life \$i --force; done; rm -rf hosts.txt $NORMAL"
